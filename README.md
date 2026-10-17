@@ -65,4 +65,59 @@ This document provides details on testing various services after running the `do
    ```
 2. Once the services are running, use the above endpoints to verify the functionality.
 
-Happy testing!
+Happy testing! 
+
+============================================= 
+
+
+Microservices Testing 
+
+================================ 
+
+
+Steps:
+
+Step 1: Clone the Repo
+
+run: git clone the Url
+
+<img width="578" height="157" alt="image" src="https://github.com/user-attachments/assets/8d5ac6c5-448a-4bda-826a-86119480c7dd" />
+
+
+Step 2: Create in each services a file named: Dockerfile with the below code and Port numbers should be added for each service.
+eg: EXPOSE 3000 for User Service
+
+---------------------- 
+Dockerfile:
+--------------
+FROM node:22-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE PORT_NUMBER
+CMD ["npm", "start"] 
+
+==========================
+
+
+The actual routes are:
+
+Service	                                      Internal port	Endpoint
+------------------------------------------------------------------------
+User Service	                                   3000	/users
+Product Service	                                 3001	/products
+Order Service	                                   3002	/orders
+Gateway Service                                  3003	/health, /api/users, /api/products, /api/orders
+
+
+============================== 
+
+Step 3: Create a file under Microservices: docker-compose.yml 
+
+Paste the below code:
+
+
+
+
+
