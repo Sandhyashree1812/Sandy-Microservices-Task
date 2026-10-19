@@ -74,10 +74,20 @@ Microservices Testing Assignment
 
 ================================ 
 
+Overview:
+This project containerizes four Node.js microservices using Docker and Docker Compose. The services communicate over a shared Docker bridge network, and the Gateway Service provides a single entry point for accessing the User, Product, and Order Services.
+
+=========================================== 
+
+
+=============================
 
 Steps:
 
+=================================
+
 Step 1: Clone the Repo
+--------------------
 
 run: git clone the Url
 
@@ -102,6 +112,11 @@ CMD ["node", "app.js"]
 
 ==========================
 note: each service uses its own port
+
+
+
+Services and Endpoints:
+-------------------------
 
 The actual routes/ports are:
 
@@ -186,6 +201,22 @@ Run: docker compose ps
 
 Step 5: Test the Gateway 
 
+----------------------------------------
+
+Gateway API URLs are:
+
+Health check: http://localhost:3003/health
+
+Users: http://localhost:3003/api/users
+
+Products: http://localhost:3003/api/products
+
+Orders: http://localhost:3003/api/orders
+
+----------------------------------------------------- 
+
+Test the Services:
+
 in browser: open http://localhost:3003/health
 
 
@@ -252,7 +283,11 @@ Step 8: Verify all four containers
 
 Run:  docker compose ps
 
-<img width="635" height="161" alt="image" src="https://github.com/user-attachments/assets/6b357621-de63-4806-b4e5-1ad92459ff60" />
+<img width="635" height="161" alt="image" src="https://github.com/user-attachments/assets/6b357621-de63-4806-b4e5-1ad92459ff60" /> 
+
+Stop the allocation:
+
+Run: docker compose down
 
 Step 9: Update and push your GitHub repository
 
