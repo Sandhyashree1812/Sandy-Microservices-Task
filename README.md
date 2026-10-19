@@ -79,18 +79,15 @@ This project containerizes four Node.js microservices using Docker and Docker Co
 
 
 
+
 ## Project Workflow
+
+```text
 
 Developer
    |
    v
 Create Microservices
-   |
-   v
-User Service | Product Service | Order Service | Gateway Service
-   |
-   v
-Create Dockerfiles for Each Service
    |
    v
 Build Docker Images
@@ -115,6 +112,8 @@ Update README and Push to GitHub
    |
    v
 Submit Project on LMS
+```
+
 
 =========================================== 
 
