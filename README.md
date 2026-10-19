@@ -92,6 +92,7 @@ Step 1: Clone the Repo
 run: git clone the Url
 
 run: git clone https://github.com/Sandhyashree1812/Sandy-Microservices-Task.git
+cd Sandy-Microservices-Task/Microservices
 
 <img width="578" height="157" alt="image" src="https://github.com/user-attachments/assets/8d5ac6c5-448a-4bda-826a-86119480c7dd" />
 
