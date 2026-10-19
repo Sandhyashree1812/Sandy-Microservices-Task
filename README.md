@@ -77,6 +77,45 @@ Microservices Testing Assignment
 Overview:
 This project containerizes four Node.js microservices using Docker and Docker Compose. The services communicate over a shared Docker bridge network, and the Gateway Service provides a single entry point for accessing the User, Product, and Order Services.
 
+
+
+## Project Workflow
+
+Developer
+   |
+   v
+Create Microservices
+   |
+   v
+User Service | Product Service | Order Service | Gateway Service
+   |
+   v
+Create Dockerfiles for Each Service
+   |
+   v
+Build Docker Images
+   |
+   v
+Configure Docker Compose
+   |
+   v
+Run All Containers
+   |
+   v
+Test APIs Through Gateway
+   |
+   v
+Verify Service Communication
+   |
+   v
+Capture Screenshots
+   |
+   v
+Update README and Push to GitHub
+   |
+   v
+Submit Project on LMS
+
 =========================================== 
 
 
