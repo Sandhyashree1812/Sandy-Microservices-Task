@@ -70,7 +70,7 @@ Happy testing!
 ============================================= 
 
 
-Microservices Testing 
+Microservices Testing Assignment
 
 ================================ 
 
@@ -99,9 +99,9 @@ EXPOSE PORT_NUMBER
 CMD ["node", "app.js"]
 
 ==========================
+note: each service uses its own port
 
-
-The actual routes are:
+The actual routes/ports are:
 
 Service	                                      Internal port	Endpoint
 ------------------------------------------------------------------------
@@ -184,8 +184,7 @@ Run: docker compose ps
 
 Step 5: Test the Gateway 
 
-in browser: open 
-http://localhost:3003/health
+in browser: open http://localhost:3003/health
 
 
 <img width="302" height="114" alt="image" src="https://github.com/user-attachments/assets/ba406ee0-63d1-4761-b06c-d47d80fc8be6" />
@@ -217,7 +216,7 @@ This gives an empty list.
 
 Let's create a Test order.
 
-Steo 6: Create a test order
+Step 6: Create a test order
 
 --------------------------- 
 
